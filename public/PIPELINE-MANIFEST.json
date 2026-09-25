@@ -5,21 +5,35 @@
   "variantId": "default",
   "canonicalId": "anna-default",
   "studentId": "anna",
-  "runId": "run-000000000111",
+  "runId": "run-000000000114",
   "runInfo": {
-    "alias": "maintenance-artifact-reconcile",
+    "alias": "update-acceptance-publish",
     "stages": [
-      "preflight",
+      "observe-wp",
+      "plan-wp-release",
+      "bump-wp-version",
+      "tag-wp",
+      "update-description",
       "build",
+      "static-test",
+      "browser",
+      "wallpaper-engine",
       "package-check",
-      "artifact-reconcile"
+      "commit-github",
+      "gate-publish",
+      "official-editor-pre-submit",
+      "official-editor-ui-pre-submit",
+      "official-editor-submit",
+      "tag-workshop",
+      "push-github",
+      "release-finalize"
     ]
   },
-  "versionTag": "v1.0.0",
+  "versionTag": "v1.0.1",
   "projectId": "wallpaper-anna",
   "package": {
     "name": "anna-wallpaper",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "files": [
     {
@@ -153,8 +167,8 @@
       "size": 1202154
     },
     {
-      "path": "assets/index-BFqWTm7O.js",
-      "sha256": "a56bc450197a3194a1d121db211cbdec20bcb5b5d70dcf799b9fdc0285520d5c",
+      "path": "assets/index-BqdJKE8U.js",
+      "sha256": "3aeeba42e1391a8f716d2d61eceebbf64634e3aa52d8d640e7a6e256eb3ed704",
       "size": 151589
     },
     {
@@ -164,7 +178,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "ee807c2627a349ca5539abf7988243a9882368881c24a2dece148e3792b39191",
+      "sha256": "43338f1a6245bd30fdcf04002ac8061966f12f3b55dd724c69c989fa3f5cec3f",
       "size": 577
     },
     {
@@ -184,8 +198,8 @@
     },
     {
       "path": "project.json",
-      "sha256": "b4f1c31ff96046e9f030cf5ad5c03f0a8cd587438054709978ad27f425c9fab6",
-      "size": 16427
+      "sha256": "c8125592f648f5a39feb0036d6648f0252350c25b07d2c230ac2d0acf4cb7b46",
+      "size": 16491
     },
     {
       "path": "THIRD-PARTY-NOTICES.txt",
@@ -198,6 +212,6 @@
       "size": 554544
     }
   ],
-  "contentDigest": "18ef3070ca59c3ec3775f2c99b69ff3dfd55184bf2b7bc14cdfa9e36f5efa114",
-  "manifestDigest": "5895678f23b6eed8b932b278b9b9d7910523389e0154113c699941e7060437ff"
+  "contentDigest": "f6e3fb188b6675b21e5d7e7206f3f0f7bf5daa6d0ca3d7abca9924c75eb6f864",
+  "manifestDigest": "2efef2eef23363f0fb4ff6bed5b816925e1bfe94e533859cac27f7952b7ca2f8"
 }
